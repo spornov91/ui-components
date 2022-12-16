@@ -80,30 +80,100 @@
 
 	</LinearLayout>
 
-	<include
+	<RelativeLayout
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		layout="@layout/card"/>
+		android:layout_height="match_parent">
 
-	<include
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		layout="@layout/card"/>
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:id="@+id/scrollView"
+			android:fillViewport="true"
+			android:layout_height="fill_parent">
 
-	<include
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		layout="@layout/card"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="top"
+				android:background="#FFFFFF"
+				android:layout_gravity="top"
+				android:orientation="vertical">
 
-	<include
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		layout="@layout/card"/>
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
 
-	<include
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		layout="@layout/card"/>
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+				<include
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					layout="@layout/card"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="80dp"
+			android:orientation="horizontal"
+			android:id="@+id/commandLayout"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="25dp"
+			android:layout_alignParentTop="false">
+
+			<LinearLayout
+				android:clickable="true"
+				android:focusable="true"
+				android:background="@drawable/ripple_selector_fab"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:src="@drawable/supervised_user1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:minHeight="44dp"
+					android:minWidth="44dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
 
 </LinearLayout>
 
