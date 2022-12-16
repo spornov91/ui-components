@@ -18,19 +18,25 @@ public final class R {
         public static final int fab_normal=0x7f020004;
         public static final int fab_pressed=0x7f020005;
         public static final int ic_launcher=0x7f020006;
-        public static final int ripple_selector=0x7f020007;
-        public static final int ripple_selector_fab=0x7f020008;
-        public static final int rounded=0x7f020009;
-        public static final int selector=0x7f02000a;
-        public static final int supervised_user1=0x7f02000b;
+        public static final int nav_btn_focused=0x7f020007;
+        public static final int nav_btn_normal=0x7f020008;
+        public static final int nav_btn_pressed=0x7f020009;
+        public static final int ripple_selector=0x7f02000a;
+        public static final int ripple_selector_fab=0x7f02000b;
+        public static final int ripple_selector_nav=0x7f02000c;
+        public static final int rounded=0x7f02000d;
+        public static final int selector=0x7f02000e;
+        public static final int supervised_user1=0x7f02000f;
     }
     public static final class id {
+        public static final int bottomNavigation=0x7f060002;
         public static final int commandLayout=0x7f060001;
         public static final int scrollView=0x7f060000;
     }
     public static final class layout {
         public static final int card=0x7f030000;
         public static final int main=0x7f030001;
+        public static final int old_card=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

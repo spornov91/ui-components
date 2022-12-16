@@ -8,82 +8,10 @@
 	android:layout_gravity="top"
 	android:orientation="vertical">
 
-	<LinearLayout
-		android:clickable="true"
-		android:focusable="true"
-		android:background="@drawable/ripple_selector"
-		android:layout_height="wrap_content"
-		android:layout_margin="10dp"
-		android:layout_width="match_parent"
-		android:orientation="horizontal">
-
-		<LinearLayout
-			android:layout_height="match_parent"
-			android:layout_width="wrap_content"
-			android:orientation="vertical"
-			android:gravity="center">
-
-			<ImageView
-				android:src="@drawable/supervised_user1"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_margin="10dp"
-				android:minHeight="44dp"
-				android:minWidth="44dp"/>
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:orientation="vertical">
-
-			<TextView
-				android:text="Александр"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_margin="10dp"
-				android:textColor="#FFFFFF"/>
-
-			<TextView
-				android:text="6.08.1991 г. (31 год)"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_margin="10dp"
-				android:textColor="#FFFFFF"/>
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_height="match_parent"
-			android:layout_width="match_parent"
-			android:orientation="horizontal"
-			android:gravity="right">
-
-			<LinearLayout
-				android:layout_height="match_parent"
-				android:layout_width="wrap_content"
-				android:orientation="vertical"
-				android:gravity="center">
-
-				<TextView
-					android:text="234"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_margin="10dp"
-					android:textSize="30sp"
-					android:textColor="#FFFFFF"/>
-
-			</LinearLayout>
-
-		</LinearLayout>
-
-	</LinearLayout>
-
 	<RelativeLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
-
+		<!-- Scroll List Items -->
 		<ScrollView
 			android:layout_width="fill_parent"
 			android:id="@+id/scrollView"
@@ -141,16 +69,16 @@
 			</LinearLayout>
 
 		</ScrollView>
-
+		<!-- FloatBTN -->
 		<LinearLayout
 			android:layout_width="wrap_content"
 			android:layout_height="80dp"
 			android:orientation="horizontal"
 			android:id="@+id/commandLayout"
-			android:layout_alignParentBottom="true"
+			android:layout_alignParentBottom="false"
 			android:layout_alignParentRight="true"
 			android:layout_margin="25dp"
-			android:layout_alignParentTop="false">
+			android:layout_alignParentTop="true">
 
 			<LinearLayout
 				android:clickable="true"
@@ -171,6 +99,80 @@
 
 			</LinearLayout>
 
+		</LinearLayout>
+		<!-- Navigation -->
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:id="@+id/bottomNavigation"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="false"
+			
+			android:layout_centerHorizontal="true">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="horizontal"
+				android:background="@drawable/rounded"
+				>
+			<!-- NavBTN1 -->
+			<LinearLayout
+				android:clickable="true"
+				android:focusable="true"
+				android:background="@drawable/ripple_selector_nav"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:src="@drawable/supervised_user1"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_margin="10dp"
+					android:minHeight="24dp"
+					android:minWidth="24dp"/>
+
+			</LinearLayout>
+			<!-- NavBTN2 -->
+			<LinearLayout
+				android:clickable="true"
+				android:focusable="true"
+				android:background="@drawable/ripple_selector_nav"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:src="@drawable/supervised_user1"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_margin="10dp"
+					android:minHeight="24dp"
+					android:minWidth="24dp"/>
+
+			</LinearLayout>
+			<!-- NavBTN3 -->
+			<LinearLayout
+				android:clickable="true"
+				android:focusable="true"
+				android:background="@drawable/ripple_selector_nav"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:src="@drawable/supervised_user1"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_margin="10dp"
+					android:minHeight="24dp"
+					android:minWidth="24dp"/>
+
+			</LinearLayout>
+			
+			</LinearLayout>
 		</LinearLayout>
 
 	</RelativeLayout>
